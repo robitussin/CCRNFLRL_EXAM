@@ -41,9 +41,9 @@ The agent has two possible actions in each state:
 The reward function is given as follows:
 
 - $R(Sunny, G) = +2$ (enjoy going out on sunny days)  
-- $ R(Sunny, I) = 0 $ (wastes the sunny day by staying in)  
-- $ R(Rainy, G) = +1 $ (going out in rain is not so fun)  
-- $ R(Rainy, I) = +3 $ (enjoys relaxing indoors while it rains)  
+- $R(Sunny, I) = 0$ (wastes the sunny day by staying in)  
+- $R(Rainy, G) = +1$ (going out in rain is not so fun)  
+- $R(Rainy, I) = +3$ (enjoys relaxing indoors while it rains)  
 
 <img src="Picture4.png" height="200" width="400
 ">
@@ -55,7 +55,7 @@ Transitions are deterministic:
 <img src="Picture3.png" height="250" width="350
 ">
 
-- The discount factor is $ \gamma = 0.5 $.  
+- The discount factor is $\gamma = 0.5$.  
 - The agent follows a **uniform random policy**, in each state it chooses **Go Out** or **Stay Inside** with probability **0.5**
 
 
