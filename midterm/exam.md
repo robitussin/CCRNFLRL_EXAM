@@ -40,7 +40,7 @@ The agent has two possible actions in each state:
 
 The reward function is given as follows:
 
-- $ R(Sunny, G) = +2 $ (enjoy going out on sunny days)  
+- $R(Sunny, G) = +2$ (enjoy going out on sunny days)  
 - $ R(Sunny, I) = 0 $ (wastes the sunny day by staying in)  
 - $ R(Rainy, G) = +1 $ (going out in rain is not so fun)  
 - $ R(Rainy, I) = +3 $ (enjoys relaxing indoors while it rains)  
