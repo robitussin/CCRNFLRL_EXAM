@@ -64,9 +64,9 @@ Transitions are deterministic:
 
 **(b)** Compute the average expected reward for $Rainy$. **(2 pts)**
 
-**(c)** Using the bellman expectation equation, solve for $ v_\pi(Sunny) $  **(5 pts)**
+**(c)** Using the bellman expectation equation, solve for $v_\pi(Sunny)$  **(5 pts)**
 
-**(d)** Using the bellman expectation equation, solve for $ v_\pi(Rainy) $. **(6 pts)**
+**(d)** Using the bellman expectation equation, solve for $v_\pi(Rainy)$. **(6 pts)**
 
 
 ---
@@ -90,7 +90,7 @@ Transitions are deterministic:
 - Bumping into a wall will put the agent back to the previous state.  
 - Reward is $-1$ per step for every transition into a non-terminal state. 
 - Entering state $I$ yields a reward of $0$ and the episode ends.  
-- Discount factor: $ \gamma = 1 $.
+- Discount factor: $\gamma = 1$.
 - The agent **starts with a uniform random policy**. At each state, each action has probability $0.25$.  
 
 **(a)** Using dynamic programming, compute the optimal state-value function $v_*(s)$ for all non-terminal states. **(9 pts)**
