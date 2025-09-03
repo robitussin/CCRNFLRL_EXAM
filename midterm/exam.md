@@ -40,10 +40,10 @@ The agent has two possible actions in each state:
 
 The reward function is given as follows:
 
-- \( R(Sunny, G) = +2 \) (enjoy going out on sunny days)  
-- \( R(Sunny, I) = 0 \) (wastes the sunny day by staying in)  
-- \( R(Rainy, G) = +1 \) (going out in rain is not so fun)  
-- \( R(Rainy, I) = +3 \) (enjoys relaxing indoors while it rains)  
+- $ R(Sunny, G) = +2 $ (enjoy going out on sunny days)  
+- $ R(Sunny, I) = 0 $ (wastes the sunny day by staying in)  
+- $ R(Rainy, G) = +1 $ (going out in rain is not so fun)  
+- $ R(Rainy, I) = +3 $ (enjoys relaxing indoors while it rains)  
 
 <img src="Picture4.png" height="200" width="400
 ">
@@ -55,18 +55,18 @@ Transitions are deterministic:
 <img src="Picture3.png" height="250" width="350
 ">
 
-- The discount factor is \( \gamma = 0.5 \).  
+- The discount factor is $ \gamma = 0.5 $.  
 - The agent follows a **uniform random policy**, in each state it chooses **Go Out** or **Stay Inside** with probability **0.5**
 
 
 
-**(a)** Compute the average expected reward for \(Sunny\). **(2 pts)**
+**(a)** Compute the average expected reward for $Sunny$. **(2 pts)**
 
-**(b)** Compute the average expected reward for \(Rainy\). **(2 pts)**
+**(b)** Compute the average expected reward for $Rainy$. **(2 pts)**
 
-**(c)** Using the bellman expectation equation, solve for \( v_\pi(Sunny) \)  **(5 pts)**
+**(c)** Using the bellman expectation equation, solve for $ v_\pi(Sunny) $  **(5 pts)**
 
-**(d)** Using the bellman expectation equation, solve for \( v_\pi(Rainy) \). **(6 pts)**
+**(d)** Using the bellman expectation equation, solve for $ v_\pi(Rainy) $. **(6 pts)**
 
 
 ---
@@ -90,12 +90,12 @@ Transitions are deterministic:
 - Bumping into a wall will put the agent back to the previous state.  
 - Reward is $-1$ per step for every transition into a non-terminal state. 
 - Entering state $I$ yields a reward of $0$ and the episode ends.  
-- Discount factor: \( \gamma = 1 \).
+- Discount factor: $ \gamma = 1 $.
 - The agent **starts with a uniform random policy**. At each state, each action has probability $0.25$.  
 
-**(a)** Using dynamic programming, compute the optimal state-value function \(v_*(s)\) for all non-terminal states. **(9 pts)**
+**(a)** Using dynamic programming, compute the optimal state-value function $v_*(s)$ for all non-terminal states. **(9 pts)**
 
-**(b)** Find the optimal  policy \(\pi_*(s)\) for all non-terminal states. **(6 pts)**
+**(b)** Find the optimal  policy $\pi_*(s)$ for all non-terminal states. **(6 pts)**
 
 
 
